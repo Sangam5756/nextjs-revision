@@ -39,7 +39,6 @@ export default async function Home() {
 * Keeps API keys or sensitive data secure.
 * Used in Server Components (default in Next.js App Router).
 
----
 
 ### 2. **Client-Side Data Fetching**
 
@@ -76,7 +75,6 @@ export default function Home() {
 * Needed when the data is dynamic and needs to update in real-time (e.g., user input).
 * Best for interactive components that depend on browser-side logic.
 
----
 
 ## 🔧 Tools Used
 
@@ -85,13 +83,11 @@ export default function Home() {
 * **React useEffect & useState** (for client side)
 * **Mocki.io** as a free mock API endpoint
 
----
 
 ## 📌 Purpose of This Project
 
-> This is a **learning exercise** to understand the **difference between client-side and server-side rendering in Next.js**, and how to handle **data fetching** in both cases.
+ This is a **learning exercise** to understand the **difference between client-side and server-side rendering in Next.js**, and how to handle **data fetching** in both cases.
 
----
 
 ## 🧠 What I Learned
 
@@ -100,4 +96,3 @@ export default function Home() {
 * How to fetch data on the **client** using `useEffect()` and `useState()`.
 * How Next.js handles server and client components separately in the **App Router**.
 
----
