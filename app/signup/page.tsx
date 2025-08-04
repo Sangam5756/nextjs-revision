@@ -1,26 +1,20 @@
 "use client";
 
-import axios from "axios";
 import { useState } from "react";
+import { signup } from "@/actions/user";
 
 export default function SignIn() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = async () => {
-    console.log(username, password);
-    const submit = await axios.post("http://localhost:3000/api/v1/user", {
-      username,
-      password,
-    });
+     await signup(username, password);
     alert("data successfully submitted");
-    setPassword("");
-    setUsername("");
   };
 
   return (
     <div className="flex flex-col items-center ">
-      <h1>Signin page</h1>
+      <h1>SignUn page</h1>
       <div className="flex flex-col">
         <label htmlFor="username">Enter UserName</label>
         <input
